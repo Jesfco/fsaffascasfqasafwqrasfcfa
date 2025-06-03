@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TACSIM STUDIOS - License Agreement</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e, #0f0f23);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            padding: 15px 30px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #00d4ff, #ff00d4);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .license-hero {
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .license-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(45deg, #00d4ff, #ff00d4, #00ff88);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradient 3s ease infinite;
+            text-shadow: 0 0 50px rgba(0, 212, 255, 0.2);
+        }
+
+        @keyframes textGradient {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .license-content {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: #ffffff;
+        }
+
+        .license-content h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .license-content p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .license-content strong {
+            color: #ff00d4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .license-content {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="plugins.html">PLUGINS</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <section class="license-hero">
+        <h1>LICENSE AGREEMENT</h1>
+    </section>
+
+    <section class="license-content">
+        <p><strong>Effective Date:</strong> May 4, 2025</p>
+
+        <h2>1. INTRODUCTION</h2>
+        <p>This License Agreement ("Agreement") is a legally binding contract between you (the "User") and the original
+            developers, maminka1948 and Dr. Mamba (collectively, the "Developers"). By downloading, installing,
+            accessing, or using the callout software and associated files (the "Software"), you acknowledge that you
+            have read, understood, and agree to be bound by the terms of this Agreement.</p>
+
+        <h2>2. LICENSE GRANT AND RESTRICTIONS</h2>
+        <p><strong>2.1 Limited License:</strong> A limited, non-exclusive, non-transferable, revocable license for
+            personal, non-commercial use only.</p>
+        <p><strong>2.2 Distribution Restriction:</strong> No unauthorized redistribution or sharing.</p>
+        <p><strong>2.3 Modification Restriction:</strong> No reverse engineering, modifying, or creating derivatives.
+        </p>
+        <p><strong>2.4 Commercial Use Prohibition:</strong> Strictly prohibited commercial usage.</p>
+
+        <h2>3. INTELLECTUAL PROPERTY</h2>
+        <p><strong>3.1 Ownership:</strong> All rights remain with the Developers.</p>
+        <p><strong>3.2 Copyright:</strong> Protected by international law.</p>
+
+        <h2>4. VERSION CONTROL AND UPDATES</h2>
+        <p><strong>4.1 Version Designation:</strong> The Developers control versioning.</p>
+        <p><strong>4.2 Broken Versions:</strong> Broken versions are unsupported.</p>
+
+        <h2>5. SUPPORT AND COMMUNITY</h2>
+        <p><strong>5.1 Official Support:</strong> Via Discord: <a href="https://discord.gg/k7u4qXme8j" target="_blank"
+                style="color:#00d4ff;">https://discord.gg/MM5gCC3g</a></p>
+        <p><strong>5.2 No Warranty:</strong> Provided "as is" without any warranties.</p>
+
+        <h2>6. TERMINATION</h2>
+        <p><strong>6.1 Automatic Termination:</strong> Violations end your license.</p>
+        <p><strong>6.2 Effect:</strong> Cease use and destroy all copies.</p>
+
+        <h2>7. DISCLAIMER OF WARRANTIES</h2>
+        <p>The Software is provided "AS IS" without warranties of any kind. No oral or written info shall increase any
+            warranty scope.</p>
+
+        <h2>8. LIMITATION OF LIABILITY</h2>
+        <p>The Developers are not liable for any damages arising from the use of the Software.</p>
+
+        <h2>9. MISCELLANEOUS</h2>
+        <p><strong>9.1 Governing Law:</strong> Governed by the laws of the Developers’ jurisdiction.</p>
+        <p><strong>9.2 Entire Agreement:</strong> Supersedes all prior agreements.</p>
+        <p><strong>9.3 Contact:</strong> For questions, visit the official Discord server.</p>
+
+        <p style="margin-top: 30px; font-size: 0.9rem; color: #bbb;">
+            BY USING THE SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, UNDERSTAND IT, AND AGREE TO BE
+            BOUND BY ITS TERMS AND CONDITIONS.<br><br>
+            © 2025 maminka1948 & Dr. Mamba. All Rights Reserved.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TACSIM STUDIOS. All rights reserved. Elevating LSPDFR to new heights.</p>
+        <p>
+            <a href="privacy.html" style="color: #00d4ff; text-decoration: none; margin-right: 20px;">Privacy Policy</a>
+            <a href="terms.html" style="color: #00d4ff; text-decoration: none;">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+
+</html>

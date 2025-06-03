@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TACSIM STUDIOS - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e, #0f0f23);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+
+        @keyframes gradientShift {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            padding: 15px 30px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(45deg, #00d4ff, #ff00d4);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .privacy-hero {
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .privacy-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            background: linear-gradient(45deg, #00d4ff, #ff00d4, #00ff88);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGradient 3s ease infinite;
+            text-shadow: 0 0 50px rgba(0, 212, 255, 0.2);
+        }
+
+        @keyframes textGradient {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .privacy-content {
+            padding: 60px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .privacy-content h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .privacy-content p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .privacy-content {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="plugins.html">PLUGINS</a></li>
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <section class="privacy-hero">
+        <h1>PRIVACY POLICY</h1>
+    </section>
+
+    <section class="privacy-content">
+        <p><strong>Effective Date:</strong> May 4, 2025</p>
+
+        <h2>1. No Data Collection</h2>
+        <p>TACSIM STUDIOS does not collect, store, or share any personal information or usage data through its software,
+            plugins, or website. Your privacy is fully respected and protected.</p>
+
+        <h2>2. No Cookies or Tracking</h2>
+        <p>Our website does not use cookies, analytics, or any third-party trackers. Your visit is entirely anonymous.
+        </p>
+
+        <h2>3. No Account Required</h2>
+        <p>You are not required to create an account or provide any personal details to access or use our software or
+            services.</p>
+
+        <h2>4. Third-Party Links</h2>
+        <p>If our site links to external sites (such as Discord), please refer to their privacy policies. We are not
+            responsible for how those third parties handle your data.</p>
+
+        <h2>5. Contact</h2>
+        <p>If you have any questions about this privacy policy, please contact us via our official Discord server:
+            <a href="https://discord.gg/k7u4qXme8j" target="_blank"
+                style="color: #00d4ff;">https://discord.gg/k7u4qXme8j
+        </p>
+
+        <p style="margin-top: 30px; font-size: 0.9rem; color: #bbb;">
+            By using our software and website, you acknowledge that no data is collected and you are free to use our
+            services with full privacy.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TACSIM STUDIOS. All rights reserved. Elevating LSPDFR to new heights.</p>
+        <p>
+            <a href="privacy.html" style="color: #00d4ff; text-decoration: none; margin-right: 20px;">Privacy Policy</a>
+            <a href="terms.html" style="color: #00d4ff; text-decoration: none;">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+
+</html>
