@@ -1,39 +1,32 @@
-/* about.css */
+/* About page specific styles - shared styles are in main.css */
 
-/* Main content styles */
 .main-content {
     padding: 120px 20px 50px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Page title styles */
 .page-title {
     text-align: center;
     font-size: 3rem;
     margin-bottom: 20px;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     animation: fadeInUp 1s ease-out;
 }
 
-/* Page subtitle styles */
 .page-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: #cccccc;
+    color: var(--text-secondary);
     margin-bottom: 60px;
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 /* Hero section styles */
 .hero-section {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
     padding: 60px 40px;
     margin-bottom: 80px;
     text-align: center;
@@ -46,7 +39,7 @@
 .hero-logo {
     font-size: 4rem;
     margin-bottom: 30px;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4, #00ff88);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink), var(--accent-green));
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -58,7 +51,7 @@
 /* Hero text styles */
 .hero-text {
     font-size: 1.3rem;
-    color: #cccccc;
+    color: var(--text-secondary);
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
@@ -73,18 +66,17 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
 }
 
 /* Stat card styles */
 .stat-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-md);
     padding: 40px 30px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
     opacity: 0;
     animation: cardSlideIn 0.6s ease forwards;
 }
@@ -93,7 +85,7 @@
 .stat-number {
     font-size: 3rem;
     font-weight: 800;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -102,7 +94,7 @@
 
 /* Stat label styles */
 .stat-label {
-    color: #cccccc;
+    color: var(--text-secondary);
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -110,10 +102,10 @@
 
 /* Origin section styles */
 .origin-section {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
     padding: 60px 40px;
     margin-bottom: 80px;
     animation: cardSlideIn 0.8s ease forwards;
@@ -124,14 +116,14 @@
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: #ffffff;
+    color: var(--text-primary);
     font-weight: 700;
 }
 
 /* Origin text styles */
 .origin-text {
     font-size: 1.2rem;
-    color: #cccccc;
+    color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -146,16 +138,22 @@
 
 /* Team card styles */
 .team-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-md);
     padding: 40px 30px;
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
     opacity: 0;
     animation: cardSlideIn 0.6s ease forwards;
+}
+
+.team-card:hover {
+    background: var(--glass-hover);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
 }
 
 /* Team photo styles */
@@ -164,7 +162,7 @@
     height: 120px;
     border-radius: 50%;
     margin: 0 auto 25px;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink));
     padding: 3px;
     display: flex;
     align-items: center;
@@ -176,26 +174,26 @@
     width: 114px;
     height: 114px;
     border-radius: 50%;
-    background: #1a1a2e;
+    background: var(--secondary-bg);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    color: #00d4ff;
+    color: var(--accent-blue);
 }
 
 /* Team name styles */
 .team-name {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--text-primary);
     margin-bottom: 12px;
     text-align: center;
 }
 
 /* Team role styles */
 .team-role {
-    color: #00d4ff;
+    color: var(--accent-blue);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 25px;
@@ -206,37 +204,13 @@
 
 /* Team bio styles */
 .team-bio {
-    color: #cccccc;
+    color: var(--text-secondary);
     line-height: 1.7;
     font-size: 1rem;
     text-align: left;
 }
 
-/* Fade in up animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Card slide in animation */
-@keyframes cardSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px) scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
+/* Animations are now in main.css - no duplicates needed */
 
 /* Responsive styles */
 @media (max-width: 768px) {

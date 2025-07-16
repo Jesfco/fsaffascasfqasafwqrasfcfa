@@ -1,26 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const API_BASE = 'http://tacsimstudios.atwebpages.com/';
-
     let pluginsData = [];
 
-    // Fetch plugins data from API and render
+    // Fetch plugins data from local JSON file
     async function loadPlugins() {
         try {
-            const res = await fetch(`${API_BASE}data.php?type=plugins`);
+            const res = await fetch('data/content/plugins.json');
             if (!res.ok) throw new Error('Network response was not ok');
             const plugins = await res.json();
 
             if (!Array.isArray(plugins) || plugins.length === 0) {
-                document.getElementById('plugins-list').innerHTML = '<div style="color:#888;">No plugins available.</div>';
+                document.getElementById('plugins-list').innerHTML = '<div class="error-message">No plugins available.</div>';
                 return;
             }
 
             pluginsData = plugins;
-
             renderPluginsList();
         } catch (err) {
             console.error('Error fetching plugins:', err);
-            document.getElementById('plugins-list').innerHTML = '<div style="color:#888;">Could not load plugins.</div>';
+            document.getElementById('plugins-list').innerHTML = '<div class="error-message">Could not load plugins. Please try again later.</div>';
         }
     }
 

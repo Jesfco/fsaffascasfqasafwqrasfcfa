@@ -1,0 +1,32 @@
+[
+  {
+    "name": "TACSIM Casual Callouts",
+    "version": "1.4.0",
+    "category": "Callout",
+    "description": "Welcome to the TACSIM Callout Pack – an immersive, realism-based set of 25 callouts designed to bring grounded police work to LSPDFR. This is the alpha version, and all current callouts are centered around the Sandy Shores region. Our focus is believable NPC behavior, natural dialogue, and dynamic scene variety.",
+    "tags": ["Callout", "Sandy Shores", "Realism"],
+    "downloadUrl": "https://cdn.discordapp.com/attachments/1365663562453749761/1395088758382268639/TACSIMS_Casual_Callouts_1.4.0.0.zip?ex=68792d27&is=6877dba7&hm=d4cf62f84f1658e4faf353528859104525963c8dc471c1099a4561abfa09c96f&",
+    "lcpdfrUrl": "https://www.lcpdfr.com/downloads/gta5mods/scripts/51062-tacsims-casual-callouts/?tab=comments",
+    "icon": "🚔"
+  },
+  {
+    "name": "Active Shooter Callout Pack",
+    "version": "2.5.0",
+    "category": "Callout",
+    "description": "The Active Shooter Callout Pack brings high-risk critical incidents to LSPDFR, focusing on realism, urgency, and immersive scene handling. Developed by TACSIM, this pack challenges players to secure areas, neutralize threats, and manage civilians across multiple environments.",
+    "tags": ["Callout", "High-Risk"],
+    "downloadUrl": "https://cdn.discordapp.com/attachments/1365663562453749761/1395089247211360359/TACSIMS_ActiveShooter.zip?ex=68792d9c&is=6877dc1c&hm=34a0727f427eb6f5dbc1f30020a17369df8ae9785cb3909981cce58e0f709baf&",
+    "lcpdfrUrl": "https://www.lcpdfr.com/downloads/gta5mods/scripts/50931-active-shooter-callout-pack/",
+    "icon": "🔫"
+  },
+  {
+    "name": "Realistic Reactions",
+    "version": "2.0.0",
+    "category": "Script",
+    "description": "Real Reactions introduces subtle but immersive NPC behavior: peds stumble, drop weapons, and react to injuries based on where they're hit. Whether it's an arm shot or a taser hit, expect responses that bring the world to life without being over-the-top.",
+    "tags": ["Script", "Realism"],
+    "downloadUrl": "https://cdn.discordapp.com/attachments/1365663562453749761/1395089247651758180/RealReactionsV2.0.0.zip?ex=68792d9c&is=6877dc1c&hm=a308e12cc9d0ef8969653d8c2f2e69b58ae53fe82bf1e0114e6748ba19851766&",
+    "lcpdfrUrl": "https://www.lcpdfr.com/downloads/gta5mods/scripts/50806-realistic-reactions/",
+    "icon": "💥"
+  }
+]

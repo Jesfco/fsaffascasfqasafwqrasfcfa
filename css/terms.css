@@ -1,3 +1,5 @@
+/* Terms page specific styles - shared styles are in main.css */
+
 .license-hero {
     height: 40vh;
     display: flex;
@@ -10,56 +12,44 @@
 .license-hero h1 {
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 800;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4, #00ff88);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink), var(--accent-green));
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     animation: textGradient 3s ease infinite;
     text-shadow: 0 0 50px rgba(0, 212, 255, 0.2);
-}
-
-@keyframes textGradient {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
 }
 
 .license-content {
     padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .license-content h2 {
     font-size: 1.8rem;
     margin-top: 40px;
     margin-bottom: 10px;
-    color: #00d4ff;
+    color: var(--accent-blue);
 }
 
 .license-content p {
     margin-bottom: 20px;
     font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 60px;
+.license-content a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition-normal);
 }
 
-footer p {
-    color: #cccccc;
-    font-size: 14px;
+.license-content a:hover {
+    color: var(--accent-pink);
 }
 
 @media (max-width: 768px) {

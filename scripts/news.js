@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     async function loadNews() {
         try {
-            // Change to your backend API domain if needed
-            const res = await fetch('http://tacsimstudios.atwebpages.com/data.php/news');
+            // Load news from local JSON file
+            const res = await fetch('data/content/news.json');
             if (!res.ok) throw new Error('Network response was not ok');
             const news = await res.json();
             news.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-           
+
             if (featured && news.length > 0) {
-                const top = news[news.length - 1]; 
+                const top = news[news.length - 1];
                 featured.innerHTML = `
                     <article class="featured-article">
                         <span class="featured-badge">BREAKING</span>

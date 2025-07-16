@@ -3,8 +3,8 @@ let newsData = [];
 let selectedPlugin = null;
 let selectedNews = null;
 
-// Updated API_BASE to match your setup
-const API_BASE = 'http://tacsimstudios.atwebpages.com/'; // REPLACE WITH YOUR ACTUAL BACKEND URL
+// Use Vercel proxy - this will route to your PHP backend
+const API_BASE = '/api/';
 
 // Helper function to get auth headers
 function getAuthHeaders() {
@@ -73,7 +73,7 @@ async function savePlugins() {
         
         // Make the request
         console.log('Sending data...');
-        const response = await fetch('http://tacsimstudios.atwebpages.com/save_plugins.php', {
+        const response = await fetch(API_BASE + 'save_plugins.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

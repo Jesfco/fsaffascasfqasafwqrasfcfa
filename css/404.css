@@ -1,14 +1,17 @@
+/* 404 page specific styles - shared styles are in main.css */
+
 .error-container {
     text-align: center;
     max-width: 800px;
     padding: 40px 20px;
+    margin: 0 auto;
     animation: fadeInUp 1s ease-out;
 }
 
 .error-code {
     font-size: 12rem;
     font-weight: 900;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4, #00ff88);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink), var(--accent-green));
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -19,29 +22,17 @@
     letter-spacing: -0.05em;
 }
 
-@keyframes textGradient {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-}
-
 .error-title {
     font-size: 3rem;
     font-weight: 700;
-    color: #ffffff;
+    color: var(--text-primary);
     margin-bottom: 30px;
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .error-message {
     font-size: 1.3rem;
-    color: #cccccc;
+    color: var(--text-secondary);
     margin-bottom: 50px;
     line-height: 1.7;
     animation: fadeInUp 1s ease-out 0.4s both;
@@ -58,42 +49,42 @@
 .btn {
     padding: 15px 35px;
     border: none;
-    border-radius: 50px;
+    border-radius: var(--border-radius-xl);
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, #00d4ff, #0099cc);
-    color: #ffffff;
+    background: linear-gradient(45deg, var(--accent-blue), #0099cc);
+    color: var(--text-primary);
     box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 20px 40px rgba(0, 212, 255, 0.4);
-    background: linear-gradient(45deg, #00d4ff, #00b8e6);
+    background: linear-gradient(45deg, var(--accent-blue), #00b8e6);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-primary);
+    border: 2px solid var(--glass-border);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #00d4ff;
-    color: #00d4ff;
+    background: var(--glass-bg);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-sm);
 }
 
 .police-car {

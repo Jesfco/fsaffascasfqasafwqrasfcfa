@@ -10,66 +10,43 @@
 .hero-content {
     max-width: 800px;
     padding: 0 20px;
-    animation: heroFadeIn 1s ease-out;
-}
-
-@keyframes heroFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    animation: fadeInUp 1s ease-out;
 }
 
 .hero h1 {
     font-size: clamp(3rem, 8vw, 6rem);
     font-weight: 800;
     margin-bottom: 20px;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4, #00ff88);
+    text-shadow: 0 0 50px rgba(0, 212, 255, 0.3);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink), var(--accent-green));
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: textGradient 3s ease infinite;
-    text-shadow: 0 0 50px rgba(0, 212, 255, 0.3);
-}
-
-@keyframes textGradient {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     opacity: 0.8;
-    animation: heroFadeIn 1s ease-out 0.2s both;
+    color: var(--text-secondary);
+    animation: fadeInUp 1s ease-out 0.2s both;
 }
 
 .cta-button {
     display: inline-block;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink));
     padding: 15px 40px;
-    border-radius: 50px;
+    border-radius: var(--border-radius-xl);
     text-decoration: none;
-    color: #ffffff;
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 16px;
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
-    animation: heroFadeIn 1s ease-out 0.4s both;
+    animation: fadeInUp 1s ease-out 0.4s both;
 }
 
 .cta-button:hover {
@@ -85,7 +62,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s ease;
+    transition: left var(--transition-slow);
 }
 
 .cta-button:hover::before {
@@ -102,7 +79,7 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 60px;
-    color: #ffffff;
+    color: var(--text-primary);
     animation: fadeInUp 1s ease-out;
 }
 
@@ -114,21 +91,21 @@
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-md);
     padding: 40px 30px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+    background: var(--glass-hover);
+    box-shadow: var(--shadow-lg);
 }
 
 .feature-card::before {
@@ -138,9 +115,9 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: linear-gradient(45deg, #00d4ff, #ff00d4);
+    background: linear-gradient(45deg, var(--accent-blue), var(--accent-pink));
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-normal);
 }
 
 .feature-card:hover::before {
@@ -150,32 +127,21 @@
 .feature-icon {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #00d4ff;
+    color: var(--accent-blue);
 }
 
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .feature-card p {
-    color: #cccccc;
+    color: var(--text-secondary);
     line-height: 1.6;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
+/* Page-specific styles only */
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
@@ -185,20 +151,6 @@
 .animate-on-scroll.animate {
     opacity: 1;
     transform: translateY(0);
-}
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin-top: 100px;
-}
-
-footer p {
-    color: #cccccc;
-    font-size: 14px;
 }
 
 @media (max-width: 768px) {

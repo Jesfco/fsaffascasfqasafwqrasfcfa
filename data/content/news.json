@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2025-05-26",
+    "title": "Casual Callouts Pack V1.2.6 - Major Bug Fixes & Enhanced Realism",
+    "author": "TACSIM Development Team",
+    "category": "update",
+    "excerpt": "The latest update to our Casual Callouts Pack addresses major bugs and introduces enhanced realism features. After extensive community feedback, we've refined the experience to deliver more authentic police work scenarios in Sandy Shores.",
+    "tags": ["update", "release"]
+  },
+  {
+    "date": "2025-05-23",
+    "title": "Casual Callouts V1.2.0 - Backend Rework & Bar Fight Callout",
+    "author": "TACSIM Development Team",
+    "category": "update",
+    "excerpt": "Major backend improvements enhance stability and performance. The new Bar Fight callout adds dynamic confrontation scenarios with improved NPC behavior and realistic dialogue interactions.",
+    "tags": ["feature update"]
+  },
+  {
+    "date": "2025-05-18",
+    "title": "Team Structure Update - Leadership Changes",
+    "author": "TACSIM Development Team",
+    "category": "announcement",
+    "excerpt": "Following recent organizational changes, we're strengthening our team structure and continuing to focus on delivering high-quality content to our community.",
+    "tags": ["team update"]
+  },
+  {
+    "date": "2025-05-14",
+    "title": "TACSIM Casual Callouts Pack - Alpha Release",
+    "author": "TACSIM Development Team",
+    "category": "release",
+    "excerpt": "Experience immersive, realism-based police work with 25 unique callouts centered around Sandy Shores. Features believable NPC behavior, natural dialogue, and dynamic scene variety for authentic LSPDFR gameplay.",
+    "tags": ["plugin release"]
+  },
+  {
+    "date": "2025-05-07",
+    "title": "Active Shooter Pack V2.5.0 - University Location Added",
+    "author": "TACSIM Development Team",
+    "category": "update",
+    "excerpt": "Major update introduces the University Active Shooter scenario with optimized AI behavior, enhanced stability, improved entity cleanup, and smoother gameplay transitions for high-intensity situations.",
+    "tags": ["content update"]
+  },
+  {
+    "date": "2025-04-28",
+    "title": "Active Shooter Pack V2.0.0 - Stability & Performance Overhaul",
+    "author": "TACSIM Development Team",
+    "category": "update",
+    "excerpt": "Comprehensive stability improvements including optimized AI behavior, enhanced entity cleanup, reduced crashes, and smoother callout sequences. The University location provides new tactical challenges.",
+    "tags": ["major update"]
+  },
+  {
+    "date": "2025-04-27",
+    "title": "Active Shooter Callout Pack - High-Risk Critical Incidents",
+    "author": "TACSIM Development Team",
+    "category": "release",
+    "excerpt": "Experience intense, realistic active shooter scenarios with focus on area security, threat neutralization, and civilian management. Multiple environments challenge tactical decision-making and response protocols.",
+    "tags": ["plugin release"]
+  },
+  {
+    "date": "2025-04-19",
+    "title": "Real Reactions V2.0.0 - Complete Seizure Logic Rewrite",
+    "author": "TACSIM Development Team",
+    "category": "update",
+    "excerpt": "Revolutionary update featuring rewritten seizure mechanics, guaranteed weapon drops, 80+ configured weapons with unique knockback forces, and comprehensive INI configuration options for ultimate customization.",
+    "tags": ["major update"]
+  },
+  {
+    "date": "2025-04-16",
+    "title": "Real Reactions V1.0 - Combat Realism Enhancement",
+    "author": "TACSIM Development Team",
+    "category": "release",
+    "excerpt": "Launch of our long-term realism project enhancing combat feel in GTA V. Features subtle NPC reactions including stumbling, weapon dropping, and location-based injury responses for immersive gameplay.",
+    "tags": ["plugin release"]
+  }
+]
