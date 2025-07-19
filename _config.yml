@@ -1,0 +1,15 @@
+# GitHub Pages Jekyll configuration
+include:
+  - .well-known
+
+# Disable Jekyll processing for static files
+plugins: []
+markdown: kramdown
+highlighter: rouge
+
+# Ensure .well-known files are served properly
+defaults:
+  - scope:
+      path: ".well-known"
+    values:
+      layout: null
