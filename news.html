@@ -74,12 +74,12 @@
         });
 
         window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const bg = document.querySelector('.bg-animation');
-            if (bg) {
-                bg.style.transform = `translateY(${scrolled * 0.2}px)`;
-            }
-        });
+        //     const scrolled = window.pageYOffset;
+        //     const bg = document.querySelector('.bg-animation');
+        //     if (bg) {
+        //         bg.style.transform = `translateY(${scrolled * 0.2}px)`;
+        //     }
+        // });
 
         document.querySelectorAll('.news-card, .featured-article').forEach(card => {
             card.addEventListener('mouseenter', () => {
@@ -89,5 +89,6 @@
     </script>
     <script src="scripts/news.js"></script>
 </body>
+
 
 </html>
