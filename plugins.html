@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TACSIM STUDIOS - Plugins</title>
     <link rel="icon" type="image/x-icon" href="data/pictures/favicon.png">
+    
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="css/plugins.css" as="style">
+    <link rel="preload" href="data/content/plugins.json" as="fetch" crossorigin>
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/plugins.css">
+    
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-    <!-- Discord/Social Media Embeds -->
     <meta property="og:title" content="TACSIM STUDIOS - Professional LSPDFR Plugins">
     <meta property="og:description"
         content="Professional-grade LSPDFR modifications crafted for ultimate realism. Explore our collection of callouts, scripts, and enhancement plugins.">
@@ -19,8 +23,6 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="TACSIM STUDIOS">
     <meta name="theme-color" content="#1a1a2e">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TACSIM STUDIOS - Professional LSPDFR Plugins">
     <meta name="twitter:description" content="Professional-grade LSPDFR modifications crafted for ultimate realism.">
@@ -51,7 +53,6 @@
         </div>
 
         <div id="plugins-list" class="plugins-grid">
-            <!-- Plugin cards will be dynamically inserted here -->
         </div>
     </main>
 
@@ -63,7 +64,8 @@
         </p>
     </footer>
 
-    <script src="scripts/plugins.js "></script>
+    <script src="scripts/performance.js" defer></script>
+    <script src="scripts/plugins.js" defer></script>
 </body>
 
 </html>

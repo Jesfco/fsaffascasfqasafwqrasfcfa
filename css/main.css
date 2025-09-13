@@ -41,7 +41,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Shared background animation */
+/* Optimized background animation */
 .bg-animation {
     position: fixed;
     top: 0;
@@ -53,6 +53,7 @@ body {
     background-size: 400% 400%;
     animation: gradientShift 8s ease infinite;
     will-change: background-position;
+    transform: translateZ(0); /* Force GPU acceleration */
 }
 
 .bg-animation::before {
@@ -65,34 +66,28 @@ body {
     background: radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
-    animation: floatOrbs 12s ease-in-out infinite;
-    will-change: transform;
 }
 
 @keyframes gradientShift {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 
 
-/* Shared nav styles */
+/* Optimized nav styles */
 nav {
     position: fixed;
     top: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateZ(0);
     background: var(--glass-bg);
     backdrop-filter: blur(20px);
     border: 1px solid var(--glass-border);
     border-radius: var(--border-radius-xl);
     padding: 15px 30px;
     z-index: 1000;
-    transition: all var(--transition-normal);
+    transition: transform var(--transition-normal), background-color var(--transition-normal);
     will-change: transform, background-color;
 }
 
@@ -287,34 +282,18 @@ footer a:hover {
 
 /* Shared animations */
 @keyframes textGradient {
-    0%, 100% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes cardSlideIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px) scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+    from { opacity: 0; transform: translateY(30px) scale(0.95); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 @keyframes spin {

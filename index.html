@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TACSIM STUDIOS - Home</title>
     <link rel="icon" type="image/x-icon" href="data/pictures/favicon.png">
+    
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="css/index.css" as="style">
+    <link rel="preload" href="data/pictures/embed-banner.png" as="image">
+    
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     
-    <!-- Discord/Social Media Embeds -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta property="og:title" content="TACSIM STUDIOS - Elite LSPDFR Development">
     <meta property="og:description" content="Elite LSPDFR development team crafting the future of law enforcement simulation. Cutting-edge plugins designed for realism and performance.">
     <meta property="og:image" content="https://tacsimstudios.xyz/data/pictures/embed-banner.png">
@@ -18,8 +22,6 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="TACSIM STUDIOS">
     <meta name="theme-color" content="#1a1a2e">
-    
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TACSIM STUDIOS - Elite LSPDFR Development">
     <meta name="twitter:description" content="Elite LSPDFR development team crafting the future of law enforcement simulation.">
@@ -80,7 +82,6 @@
     </footer>
 
     <script>
-
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -90,26 +91,35 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animate');
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
-
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', (e) => {
-                if (link.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    const target = document.querySelector(link.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                }
+        requestAnimationFrame(() => {
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
             });
         });
+
+        document.addEventListener('click', (e) => {
+            const link = e.target.closest('nav a');
+            if (link && link.getAttribute('href').startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js');
+            });
+        }
     </script>
+    <script src="scripts/performance.js" defer></script>
 </body>
 
 </html>
